@@ -2,10 +2,9 @@
 # A Python AB-AV1 GUI
 
 A lean, cross-platform [Tkinter](https://docs.python.org/3/library/tkinter.html)-based GUI for intelligently reducing the footprint of your video library by converting to [AV1](https://aomedia.org/av1/), with some bells & whistles.  
-一个精简、跨平台的 [Tkinter]（https://docs.python.org/3/library/tkinter.html） 图形界面，通过转换为 [AV1]（https://aomedia.org/av1/） 智能地减少视频库的占用，并附带一些花哨功能。
 
 > [!NOTE]
-> **v2 Breaking Changes:** The config and history file formats have changed. Existing `av1_converter_config.json` and `conversion_history.json` files will be reset on first launch.
+> **v2 Breaking Changes:** The config and history file formats have changed. Existing `av1_converter_config.json` and `conversion_history.json` files will be reset on first launch.  
 
 ## Premise
 
@@ -16,7 +15,7 @@ This tool mainly acts as a wrapper for the incredible cli tool [ab-av1](https://
 ## Features
 
 - **VMAF-based quality targeting:** targets visual quality (_default: **95**_) instead of guessing bitrates
-- **Queue-based workflow:** add files or folders, preview estimates, process sequentially
+- **Queue-based workflow:** add files or folders, preview estimates, process sequentially  
 - **Private, secure, safe:** no pip packages, no telemetry, optional anonymization of history/logs
 - **Estimate tuning:** continually improves estimates using your own conversion history (based on resolution, duration, and codec)
 
@@ -32,20 +31,20 @@ This tool mainly acts as a wrapper for the incredible cli tool [ab-av1](https://
 
 ## Usage
 
-- Install [Python](https://www.python.org/) 3.11+ ([Ensure your install includes Tkinter](https://stackoverflow.com/questions/76105218/why-does-tkinter-or-turtle-seem-to-be-missing-or-broken-shouldnt-it-be-part), included by default on Windows and MacOS).  
-- 安装 [Python]（https://www.python.org/） 3.11+（[ 确保你的安装包含 Tkinter]（https：//stackoverflow.com/questions/76105218/why-does-tkinter-or-turtle-seem-to-be-missing-or-broken-shouldn't-it-be-part），Windows 和 MacOS 默认包含）。
-- **Optional:** [FFmpeg](https://ffmpeg.org/) with libsvtav1 and [ab-av1](https://github.com/alexheretic/ab-av1/releases) may be pre-installed system-wide and available in PATH. Or download portable binaries in-app.
+- Install [Python](https://www.python.org/) 3.11+ ([Ensure your install includes Tkinter](https://stackoverflow.com/questions/76105218/why-does-tkinter-or-turtle-seem-to-be-missing-or-broken-shouldnt-it-be-part), included by default on Windows and MacOS).         
+- **Optional:** [FFmpeg](https://ffmpeg.org/) with libsvtav1 and [ab-av1](https://github.com/alexheretic/ab-av1/releases) may be pre-installed system-wide and available in PATH. Or download portable binaries in-app.  
 
 
 On Windows, double-click `convert.bat`. On Linux/macOS, run `./convert.sh`.
 
-If FFmpeg or ab-av1 are missing, download them from the Settings tab.
+If FFmpeg or ab-av1 are missing, download them from the Settings tab.  
 
 ## Notes
 
 - Output is always MKV container (best AV1 compatibility).
 - Tested on Windows. Designed for cross-platform but Linux/macOS are untested. Known limitation: sleep prevention during conversion is Windows-only.
-- **Media servers**: Be thoughtful about support for AV1 decoding in devices you want to watch video on. Old phones, PCs, streamers, and smart TVs may not support it, adding a high computational burden for transcoding on the server.
+- **Media servers**: Be thoughtful about support for AV1 decoding in devices you want to watch video on. Old phones, PCs, streamers, and smart TVs may not support it, adding a high computational burden for transcoding on the server.  
+- ** 媒体服务器 **：在你想观看视频的设备上，要考虑支持 AV1 解码。老旧手机、个人电脑、流媒体播放器和智能电视可能不支持，这会给服务器上的转码增加较高的计算负担。
 
 ### Third-Party Software
 
